@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Contact - Essence of INS Rana</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Get in touch with us for queries, feedback, or more information about the preview and related content pertaining to the Book Essence of INS Rana.">
+<script src="loadcss.js"></script>
+<noscript>
+    <link rel="stylesheet" href="style.css">
+</noscript>
+
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!-- Android and browser tab theme color -->
+  <meta name="theme-color" content="#a00000" />
+  <meta name="msapplication-navbutton-color" content="#a00000" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">
+  Skip to main content
+</a>
+
+<header>
+<img src="carousel-images/01-Front-Cover.webp" alt="Book cover of Essence of INS Rana" class="logo" width="1238" height="1752"/>
+
+  <h1>Essence of INS Rana</h1>
+
+  <nav class="site-nav" aria-label="Site Navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html" class="active" aria-current="page">Contact</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<h2>Contact Us</h2>
+<p class="contact-text">Contact <strong><em>Essence of INS Rana</em></strong> website for queries regarding the book and the website.
+
+You can contact us using the form below or email us directly:</p>
+
+<p class="contact-text">
+  <strong> Email: 
+    <a
+  href="mailto:essenceofinsrana@gmail.com"
+  aria-label="Email essenceofinsrana@gmail.com (opens your email application)">
+  essenceofinsrana@gmail.com
+</a>
+  </strong>
+</p>
+<p class="contact-text"><strong>Privacy Notice</strong>: Providing personal information is optional. We do not collect, retain, or disclose visitor data to external entities. Form submissions may be completed anonymously at your discretion.</p>
+<br>
+<p class="contact-text"><strong><em>&ast; Indicates a required field</em></strong></p>
+<form
+  id="contactForm"
+  action="https://api.web3forms.com/submit"
+  method="POST">
+
+  <input type="hidden" name="access_key"
+         value="4ba4a37f-d478-4f0e-a7a1-4658f887b2bf">
+
+  <input type="hidden" name="redirect"
+         value="https://essenceofinsrana.github.io/thankyou.html">
+
+ <input
+  type="checkbox"
+  name="botcheck"
+  tabindex="-1"
+  autocomplete="off"
+  hidden>
+
+  <label for="name">
+  Name (optional)
+</label>
+
+<input
+  id="name"
+  type="text"
+  name="name"
+  autocomplete="name">
+
+  <label for="email">
+  Email (optional)
+</label>
+
+<input
+  id="email"
+  type="email"
+  name="email"
+  autocomplete="email">
+
+  <label for="phone">
+  Phone (optional)
+</label>
+
+<input
+  id="phone"
+  type="tel"
+  name="phone"
+  autocomplete="tel">
+
+  <label for="message">
+  Message *
+</label>
+
+<textarea
+  id="message"
+  name="message"
+  required></textarea>
+
+  <div class="h-captcha" data-captcha="true"></div>
+
+  <button type="submit" class="contact-submit-btn">Send Message</button>
+
+</form>
+
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<hr class="separator" />
+      <div class="final-image">
+        <img src="07-INS-Rana-Silhouette.webp" alt="INS Rana warship silhouette" width="1280" height="264"/>
+      </div>
+</main>
+
+<button
+  id="backToTop"
+  class="back-to-top"
+  type="button"
+  aria-label="Back to top">
+
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24">
+
+    <path
+      d="M6 15 L12 9 L18 15"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round" />
+
+  </svg>
+
+</button>
+
+<footer
+  class="footer"
+  aria-label="Legal Links">
+
+<a href="privacy.html">Privacy Policy</a>
+|
+<a href="terms.html">Terms of Use</a>
+|
+<a href="hyperlinking.html">Hyperlinking Policy</a>
+|
+<a href="disclaimer.html">Disclaimer</a>
+|
+<a href="accessibility.html">Accessibility</a>
+|
+<a href="sitemap.html">Sitemap</a>
+
+<h2 class="footer-heading">About the Name</h2>
+<p class="about-name-text"><strong><em>Essence of INS Rana</em></strong> may refer to the book, this website, or the spirit and legacy associated with INS Rana. <a href="about.html#about-name"><strong><em>Read more..</em></strong><span class="sr-only">
+    about the name Essence of INS Rana
+  </span></a></p>
+
+© 2026 <strong><em>Essence of INS Rana</em></strong>. All rights reserved.
+</footer>
+
+<!-- Store a temporary submission timestamp.
+thankyou.html verifies and removes it
+to prevent direct access via URL or page refresh. -->
+
+<script>
+
+const contactForm =
+  document.getElementById("contactForm");
+
+if (contactForm) {
+
+  contactForm.addEventListener("submit", () => {
+
+    sessionStorage.setItem(
+      "contactSubmitted",
+      Date.now().toString()
+    );
+
+  });
+
+}
+
+</script>
+
+<script>
+
+const backToTop =
+  document.getElementById('backToTop');
+
+if (backToTop) {
+
+  window.addEventListener('scroll', () => {
+
+    if (window.scrollY > 300) {
+
+      backToTop.classList.add('visible');
+
+    } else {
+
+      backToTop.classList.remove('visible');
+
+    }
+
+  });
+
+  backToTop.addEventListener('click', () => {
+
+    window.scrollTo({
+
+      top: 0,
+
+      behavior:
+        window.matchMedia(
+          '(prefers-reduced-motion: reduce)'
+        ).matches
+          ? 'auto'
+          : 'smooth'
+    });
+
+  });
+
+}
+
+</script>
+
+</body>
+</html>
