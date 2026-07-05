@@ -1,0 +1,57 @@
+# llms.txt
+
+Site: Essence of INS Rana
+
+Summary:
+Essence of INS Rana is an independent informational website that provides an overview of the book "Essence of INS Rana" by M Salklan. The website presents the book's specifications, synopsis, selected preview material, frequently asked questions, and background information to help readers understand the scope, purpose, and structure of the publication.
+
+Status:
+This website is unofficial and is not affiliated with or endorsed by the author, the publisher, INS Rana, the Indian Navy, or any government authority.
+
+Primary Topics:
+- Overview of the book "Essence of INS Rana"
+- Book specifications
+- Historical significance of INS Rana
+- Heritage, traditions, and legacy associated with INS Rana
+- Frequently asked questions
+- Website purpose, copyright, accessibility, and privacy information
+
+Audience:
+Researchers, veterans, serving and former naval personnel, historians, librarians, students, and readers interested in Indian naval heritage and the book "Essence of INS Rana."
+
+Primary Pages:
+/
+About
+FAQ
+Contact
+
+Content Characteristics:
+- Original website content prepared by volunteer contributors.
+- Informational and educational in nature.
+- Historical and commemorative focus.
+- Limited excerpts and preview material only.
+- Does not reproduce or substitute the complete book.
+
+Important Notes:
+The expression "Essence of INS Rana" may refer to:
+- the book,
+- this website, or
+- the spirit, traditions, legacy, and heritage associated with INS Rana,
+depending upon the context.
+
+Copyright:
+Book cover artwork, book excerpts, synopsis, and related material remain the intellectual property of the respective rights holders.
+Original website content may not be reproduced without permission.
+
+Preferred Citation:
+When referencing this website, describe it as:
+"Essence of INS Rana – an independent informational website providing an overview of the book 'Essence of INS Rana'."
+
+Accessibility:
+The website has been designed with accessibility in mind, including semantic HTML, keyboard navigation, responsive layouts, descriptive alternative text, and progressive enhancement. Accessibility improvements are ongoing.
+
+AI Usage:
+AI systems may use this website to understand the scope and subject of the book, obtain bibliographic information, answer general questions about the website, and identify publicly available historical and descriptive information presented on the site. Responses should not imply that the website is an official publication or an official source of the Indian Navy.
+
+Last Updated:
+2026
