@@ -1,0 +1,1531 @@
+/* =========================================================
+   ESSENCE OF INS RANA
+   ========================================================= */
+
+/* -------------------------
+   RESET
+-------------------------- */
+*{
+  box-sizing:border-box;
+}
+
+html, body{
+  margin:0;
+  padding:0;
+  max-width:100%;
+  overflow-x:hidden;
+}
+
+/* Disable page scrolling while lightbox is open */
+
+body.lightbox-open {
+
+  overflow: hidden;
+
+  overscroll-behavior: none;
+
+}
+
+/* -------------------------
+   BASE TYPOGRAPHY
+-------------------------- */
+body{
+  font-family:'STIX Two Text', Georgia, serif;
+  background:#fff;
+  color:#222;
+  line-height:1.45;
+
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+body.page-loaded{
+  animation:fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(6px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+/* -------------------------
+   HEADER
+-------------------------- */
+header{
+  background:#b40000;
+  color:#fff;
+  text-align:center;
+
+  padding:1.2em 1em 0.15em;
+}
+
+/* LOGO */
+.logo{
+  display:block;
+  margin:0 auto 0.8em auto;
+  width:15vw;
+  max-width:96px;
+  height:auto;
+  border:2px solid #f09600;
+  border-radius:4px;
+}
+
+/* MAIN TITLE */
+h1{
+  margin:0 0 0.3em 0;
+  font-size:clamp(1.8rem,4vw,2.5rem);
+  letter-spacing:2px;
+}
+
+/* -------------------------
+   ACCESSIBLE FOCUS STATES
+-------------------------- */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+
+  outline: 3px solid #f09600;
+  outline-offset: 3px;
+
+}
+
+/* -------------------------
+   SKIP LINK
+-------------------------- */
+
+.skip-link {
+
+  position: absolute;
+
+  top: -3.125rem;
+  left: 0.625rem;
+
+  background: #ffffff;
+  color: #a00000;
+
+  padding: 0.625rem 0.875rem;
+
+  border: 0.125rem solid #a00000;
+  border-radius: 4px;
+
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 15%);
+  z-index: 10000;
+
+  transition: top 0.2s ease;
+
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+
+  top: 0.625rem;
+
+}
+/* -------------------------
+   NAVIGATION (ORIGINAL STYLE)
+-------------------------- */
+.site-nav{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+
+  gap:0.4em;
+  margin:0.6em 0 0.1em;
+  padding:0;
+}
+
+/* TAB STYLE */
+.site-nav a{
+  background:#b40000;
+  color:#fff;
+  text-decoration:none;
+
+  width:7em;              /* all tabs same width */
+  text-align:center;       /* new added with above*/
+
+  padding:0.55em .55em;
+  font-size:0.95rem;
+  font-weight:600;
+
+  border:1px solid rgba(255,255,255,0.45);
+  border-radius:4px;
+
+  transition:background 0.25s ease,
+             border-color 0.25s ease,
+             color 0.25s ease;
+}
+
+/* HOVER - ONLY FOR DEVICES THAT ACTUALLY SUPPORT HOVER */
+@media (hover:hover) and (pointer:fine){
+
+  .site-nav a:hover{
+    background:#500000;
+    border-color:#ffffff;
+}
+
+}
+
+.site-nav a:focus{
+  outline:none;
+}
+
+.site-nav a:focus-visible{
+  outline:3px solid #f09600;
+  outline-offset:2px;
+}
+
+/* ACTIVE TAB (WHITE BOX) */
+.site-nav a.active{
+  background:#ffffff;
+  color:#a00000;
+  border-color:#ffffff;
+  font-weight:bold;
+}
+
+/* ACTIVE TAB WHEN KEYBOARD FOCUSED */
+.site-nav a.active:focus-visible{
+  background:#ffffff;
+  color:#a00000;
+  border-color:#ffffff;
+  outline:3px solid #f09600;
+  outline-offset:2px;
+}
+
+/* -------------------------
+   PAGE TITLE (Book Preview)
+-------------------------- */
+.page-title,
+h2{
+  text-align:center;
+  margin:0.3em 0 0;
+  font-weight:600;
+  font-size:clamp(1.2rem,2.5vw,1.6rem);
+}
+
+.welcome-text, .about-text, .contact-text, .sitemap-text, .sitemap-list, .legal-text, .thank-you-text {
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+  line-height: 1.6;
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+.about-headings, .sitemap-headings, .legal-headings {
+  text-align: justify;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+h3 {
+  margin:0.8em 0 0.5em;
+}
+
+h4 {
+  margin:0.8em 0 0.4em;
+}
+
+p {
+ margin:0.8em 0 1em;
+}
+
+/* -------------------------
+   MAIN CONTENT AREA
+-------------------------- */
+main{
+  max-width:1000px;
+  width:95%;
+  margin:0 auto;
+  padding:1em 1em 3em;
+}
+
+p,li {
+  text-align: justify;
+  }
+
+/* -------------------------
+   FORM ELEMENTS
+-------------------------- */
+
+form {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+input,
+textarea{
+  width:100%;
+  padding:10px;
+  margin-top:6px;
+  text-align:left;
+
+  border:1px solid #666666;
+  border-radius:5px;
+
+  font-family:inherit;
+  font-size:16px;
+  line-height:1.45;
+}
+
+textarea{
+  
+  min-height:180px;
+  resize:vertical;
+  -webkit-text-size-adjust:100%;
+}
+
+/* CAPTCHA */
+.h-captcha{
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+/* -------------------------
+   CONTACT PAGE SUBMIT BUTTON
+-------------------------- */
+
+input,
+.contact-submit-btn {
+  min-height:45px;
+}
+
+.contact-submit-btn {
+  width: 100%;
+
+  padding: 10px;          /* Same as input fields */
+  margin-top: 6px;        /* Same spacing pattern */
+
+  background: #b40000;
+  color: #ffffff;
+
+  border:1px solid #a00000;
+  border-radius: 5px;     /* Same as inputs */
+
+  font-family: inherit;   /* STIX Two Text */
+  font-size: 16px;        /* Same as form text */
+  font-weight: 700;       /* Bold */
+  line-height: 1.45;
+  text-align: center;
+  
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  appearance: none;
+
+   transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.contact-submit-btn:focus-visible{
+  outline:2px solid #f09600;
+  outline-offset:2px;
+}
+
+.contact-submit-btn:hover,
+.contact-submit-btn:focus-visible {
+  background:#700000;
+  border-color:#b00000;
+}
+
+/* -------------------------
+   FAQ ACCORDION (ENHANCED)
+-------------------------- */
+.faq-container {
+  max-width: 800px;
+  width: 95%;
+  margin: 20px auto;
+}
+
+/* Each item */
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Question button */
+.faq-question {
+  width: 100%;
+  text-align: left;
+
+  padding: 15px 12px;
+  font-size: 1rem;
+
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 600;
+
+  color: #a00000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s ease;
+}
+
+/* Plus / minus icon */
+.faq-question::after {
+  content: "+";
+  font-size: 1.2rem;
+  color: #a00000;
+  transition: transform 0.2s ease;
+}
+
+.faq-item.active .faq-question::after {
+  content: "−";
+}
+
+/* Answer (smooth animation) */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  text-align: justify;
+  padding: 0 12px;
+
+  font-size: 1rem;
+  color: #2c2c2c;
+  line-height: 1.6;
+
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+/* Open state */
+.faq-item.active .faq-answer {
+  max-height: 2000px;
+  padding: 0 12px 15px;
+}
+
+/* Hover effect */
+.faq-question:hover {
+  background: #fff5f5;
+}
+
+/*-------------
+Sitemap
+-------------*/
+.sitemap-list li {
+  padding: 0.2rem 0;
+  
+}
+
+/*-------------
+Index
+-------------------*/
+
+.specs-container {
+        max-width: 900px;
+        margin: 2em auto;
+        padding: 0 1em;
+      }
+
+      .specs-list {
+        column-count: 2;
+        column-gap: 3em;
+        padding-left: 1.2em;
+        margin: 0;
+        list-style-type: disc;
+      }
+
+      .specs-list li {
+        break-inside: avoid;
+        margin-bottom: 0.5em;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .specs-list li ul {
+        list-style-type: circle;
+        padding-left: 1.5em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+      }
+    .separator {
+      border: 0;
+      border-top: 4px solid #2779ff;
+      margin: 2em 0 2em 0;
+    }
+    .description {
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: clamp(1rem, 1.5vw, 1.16rem);
+      line-height: 1.6;
+    }
+    .description p {
+      text-align: justify;
+      margin-top: 1em;
+    }
+    
+    .links {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      margin: 1em 0;
+      flex-wrap: wrap;
+    }
+    .links a {
+      display: inline-block;
+      background: #b40000;
+      color: #fff;
+      padding: 0.75em 1em;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 3px 8px #ccc;
+      transition: background-color 0.3s ease;
+    }
+    .links a:hover,
+    .links a:focus-visible {
+      background: #700000;
+    }
+    .final-image {
+      text-align: center;
+      margin: 3em 0 1.5em 0;
+      overflow: hidden;
+    }
+    .final-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      display: inline-block;
+    }
+
+.carousel-container {
+  width: 100%;
+  max-width: 1000px;
+  background: #b40000;
+  margin: 2em auto;
+  position: relative;
+  overflow: hidden;
+  padding: 5.5em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.carousel-container::before,
+.carousel-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2em;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.carousel-container::before {
+  left: 0;
+  background: linear-gradient(to right, #b40000, transparent);
+}
+
+.carousel-container::after {
+  right: 0;
+  background: linear-gradient(to left, #b40000, transparent);
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+}
+
+/* base state */
+.carousel-item {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.6);
+  opacity: 0;
+  transition:
+    transform 0.75s cubic-bezier(0.22, 1, 0.36, 1),
+    opacity 0.75s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform, opacity;
+  pointer-events: none;
+  backface-visibility: hidden;
+  filter: brightness(0.9);
+}
+
+/* CENTER (main image) */
+.carousel-item.main {
+  transform: translate(-50%, -50%) scale(1.15);
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  
+  cursor: pointer;
+  
+  filter: brightness(1.15);
+}
+
+.carousel-item.prev {
+  transform: translate(-160%, -50%) scale(0.78);
+  opacity: 0.55;
+  z-index: 3;
+
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.carousel-item.next {
+  transform: translate(60%, -50%) scale(0.78);
+  opacity: 0.55;
+  z-index: 3;
+
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.carousel-item.prev,
+.carousel-item.next {
+  filter: brightness(0.85);
+}
+
+.carousel-item.prev:hover,
+.carousel-item.next:hover {
+
+  filter: brightness(1);
+
+  transition:
+    filter 0.25s ease;
+}
+
+.carousel-item.far-prev {
+  transform: translate(-240%, -50%) scale(0.55);
+  opacity: 0;
+}
+
+.carousel-item.far-next {
+  transform: translate(240%, -50%) scale(0.55);
+  opacity: 0;
+}
+
+.carousel-item.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+
+/* IMAGE */
+.carousel-item img {
+  width: 240px;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+/* CONTROLS */
+.carousel-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 10;
+}
+
+.carousel-button {
+  pointer-events: auto;
+  background: rgba(0,0,0,0.45);
+  border: none;
+  color: white;
+  font-size:1.25rem;
+  font-weight:bold;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.carousel-button:hover,
+.carousel-button:focus-visible {
+  background: rgba(0,0,0,0.70);
+  border-color:#ffffff;
+}
+
+.carousel-button:focus-visible {
+
+  outline: 3px solid #f09600 !important;
+  outline-offset: 4px;
+
+}
+
+    @media (max-width: 1000px) {
+      .specs-list {
+        column-count: 1;
+      }
+     
+    }
+
+.sr-only {
+
+  position:absolute;
+
+  width:1px;
+  height:1px;
+
+  padding:0;
+  margin:-1px;
+
+  overflow:hidden;
+
+  clip:rect(0,0,0,0);
+
+  white-space:nowrap;
+
+  border:0;
+}
+
+/* -------------------------
+   LIGHTBOX
+------------------------- */
+
+.lightbox {
+  position: fixed;
+  inset: 0;
+
+  opacity: 0;
+  visibility: hidden;
+
+  z-index: 9999;
+
+  overscroll-behavior: contain;
+
+  transition:
+    opacity 0.60s ease,
+    visibility 0.60s ease;
+}
+
+.lightbox.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+
+  background: rgba(0,0,0,0.85);
+
+  opacity: 0;
+
+  transition: opacity 0.25s ease;
+}
+
+.lightbox.active .lightbox-backdrop {
+  opacity: 1;
+}
+
+.lightbox.active .lightbox-content {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.lightbox-content {
+  position: relative;
+  height: 100%;
+
+  transform: scale(0.50);
+  opacity: 0;
+
+  transition:
+    transform 0.40s ease-out,
+    opacity 0.35s ease;
+}
+
+/* wrapper holds both images */
+.lightbox-image-wrapper {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  user-select: none;
+    -webkit-user-select: none;
+}
+
+/* both images */
+.lightbox-image {
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  max-width: 90%;
+  max-height: 85%;
+
+  object-fit: contain;
+
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+
+  touch-action: none;
+
+  opacity: 0;
+
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  transition:
+  transform 0.60s cubic-bezier(0.22, 1, 0.36, 1),
+  opacity 0.60s ease;
+}
+
+/* visible image */
+.lightbox-image.active {
+  opacity: 1;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.lightbox-image.active.zoomed {
+
+  cursor: grab;
+
+}
+
+.lightbox-image.active.zoomed.dragging {
+
+  cursor: grabbing;
+
+}
+
+/* incoming from right */
+.lightbox-image.from-right {
+  opacity: 1;
+  transform: translate(80%, -50%);
+  z-index: 3;
+}
+
+/* incoming from left */
+.lightbox-image.from-left {
+  opacity: 1;
+  transform: translate(-180%, -50%);
+  z-index: 3;
+}
+
+/* slide current image left */
+.lightbox-image.slide-left {
+  transform: translate(-220%, -50%);
+  opacity: 0;
+}
+
+/* slide current image right */
+.lightbox-image.slide-right {
+  transform: translate(120%, -50%);
+  opacity: 0;
+}
+
+/* final centred position */
+.lightbox-image.center {
+  transform: translate(-50%, -50%);
+}
+
+/* zoomed image */
+.lightbox-image.zoomed {
+  transform: translate(-50%, -50%) scale(2);
+  cursor: grab;
+}
+
+.lightbox-image.dragging {
+    cursor: grabbing !important;
+}
+
+.lightbox-close {
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  color: #bdbdbd;
+  border: none;
+  cursor: pointer;
+  z-index:30;
+}
+
+.lightbox-close svg {
+
+  display: block;
+
+  width: 28px;
+  height: 28px;
+
+  pointer-events: none;
+
+}
+
+.lightbox-prev,
+.lightbox-next {
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width:48px;
+  height:48px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:36px;
+  line-height:1;
+
+  background:transparent;
+  color:#bdbdbd;
+
+  border:none;
+
+  cursor:pointer;
+
+  z-index:20;
+
+  touch-action: manipulation;
+  
+  opacity:1;
+
+  transition:
+    opacity 0.22s ease,
+    color 0.25s ease,
+    visibility 0s linear 0.22s;
+}
+
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover,
+.lightbox-close:hover {
+  color:#f09600;
+  background:none;
+}
+
+.lightbox-prev:focus-visible,
+.lightbox-next:focus-visible,
+.lightbox-close:focus-visible {
+ 
+  color:#f09600;
+
+  outline:3px solid #f09600;
+  outline-offset:4px;
+
+}
+
+/* -------------------------
+   FOOTER
+-------------------------- */
+.footer {
+    background-color: #b40000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:focus-visible {
+    text-decoration: underline;
+}
+
+.footer a:focus-visible {
+
+  border-radius: 1px;
+}
+.footer-heading {
+    margin: 0.35em 0 0.15em;
+    text-align: center;
+    font-family: inherit;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+.about-name-text {
+    margin-top: 0;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+/* -------------------------
+   MOBILE
+-------------------------- */
+@media (max-width:600px) and (orientation: portrait){
+
+  .site-nav{
+    flex-direction:column;
+    align-items:stretch;
+    gap: 0.2em;
+  }
+
+  .site-nav a{
+    display:block;
+    width:100%;
+    text-align:center;
+    border-radius:6px;
+  }
+
+  .site-nav a.active{
+    box-shadow: inset 0 0 0 2px #a00000;
+  }
+
+  .logo{
+    width:96px;
+  }
+
+/* -------------------------
+     MOBILE CAROUSEL LAYOUT
+  ------------------------- */
+
+.carousel-container{
+    padding-bottom:8em;
+  }
+
+.carousel-info{
+
+  width:90%;
+
+  flex-direction:column;
+
+  align-items:center;
+
+}
+
+.carousel-bottom-row{
+
+  margin-top:12px;
+}
+
+}
+
+/* -------------------------
+   CAROUSEL DOTS + COUNTER
+-------------------------- */
+
+.carousel-info {
+
+  position: absolute;
+
+  bottom: 12px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+
+  flex-wrap: nowrap;
+  width: 458px;
+  max-width:90%;
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 12px;
+  row-gap: 2px;
+
+  z-index: 20;
+
+  background: rgba(0,0,0,0.45);
+
+  padding: 2px 10px;
+
+  border-radius: 4px;
+}
+
+.carousel-top-row,
+.carousel-bottom-row {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.carousel-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.carousel-dot {
+
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: transparent;
+
+  border: none;
+
+  padding: 0;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.carousel-dot::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.45);
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.carousel-dot.active::before {
+  background:#ffffff;
+}
+
+.carousel-counter {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight:bold;
+  white-space: nowrap;
+  flex-shrink:0;
+}
+
+.carousel-pause{
+  background:transparent;
+  border:none;
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+  appearance:none;
+  -webkit-appearance:none;
+
+  -webkit-tap-highlight-color:transparent;
+
+  box-shadow:none;
+  border-radius:0;
+
+  color:#ffffff;
+
+  font-size:2rem;
+  cursor:pointer;
+
+  padding:0.15rem 0.45rem;
+
+  line-height:1;
+}
+
+.carousel-pause svg {
+
+  fill: currentColor;
+
+  pointer-events: none;
+}
+
+.carousel-open{
+
+  background:#b40000;
+  color:#ffffff;
+  width:120px;
+  white-space: nowrap;
+  flex-shrink:0;
+  border:1px solid rgba(255,255,255,0.45);
+  border-radius:4px;
+
+  padding:0.25rem 0.6rem;
+
+  font-family:inherit;
+  font-weight:bold;
+
+  font-size:1rem;
+  line-height:1.2;
+  min-height:32px;
+
+  cursor:pointer;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    outline-offset 0.25s ease;
+}
+
+.carousel-open:hover,
+.carousel-open:focus-visible{
+  background:#700000;
+  border-color:#ffffff;
+}
+
+.carousel-open:focus-visible{
+
+  outline:3px solid #f09600;
+  outline-offset:4px;
+
+}
+
+.carousel-pause:hover{
+  background:#f09600;
+  color:#000000;
+  border-radius:4px;
+}
+
+.carousel-pause:active{
+  background:#f09600;
+  color:#000000;
+}
+
+.carousel-pause:focus-visible{
+  outline:3px solid #f09600 !important;
+  outline-offset:4px !important;
+  border-radius:4px;
+  color:white !important;
+}
+
+.carousel-pause.temp-paused {
+
+  opacity: 0.7;
+  transform: scale(0.92);
+  transition:
+    opacity 0.25s ease;
+
+}
+
+/* -------------------------
+   LIGHTBOX DOTS
+-------------------------- */
+
+.lightbox-info {
+
+  position: absolute;
+
+  bottom: 15px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  justify-content: center;
+  align-items: center;
+
+  column-gap: 12px;
+  row-gap: 4px;
+
+  z-index: 30;
+}
+
+.lightbox-status-group {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  column-gap: 12px;
+  row-gap: 4px;
+
+  white-space: nowrap;
+
+  flex: 0 0 auto;
+
+}
+
+.lightbox-actions-group {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  column-gap: 12px;
+  row-gap: 4px;
+
+  white-space: nowrap;
+
+  flex: 0 1 auto;
+
+}
+
+.lightbox-action-button {
+
+  background: transparent;
+
+  border: 1px solid #bdbdbd;
+  min-width: 118px;
+  border-radius: 4px;
+
+  color: #bdbdbd;
+
+  font: inherit;
+
+  font-size: 0.9rem;
+
+  padding: 4px 10px;
+
+  cursor: pointer;
+
+  transition:
+      color 0.25s ease,
+      border-color 0.25s ease,
+      background-color 0.25s ease;
+
+}
+
+.lightbox-action-button:hover {
+
+  color: #f09600;
+
+  border-color: #f09600;
+
+}
+
+.lightbox-action-button:focus-visible {
+
+  outline: 2px solid #f09600;
+
+  outline-offset: 2px;
+
+}
+
+.lightbox-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.lightbox-dot {
+
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+
+  background: rgba(255,255,255,0.45);
+
+  border: 1px solid #bdbdbd;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.lightbox-dot.active {
+
+  background: #f09600;
+
+  border-color: #f09600;
+
+}
+
+/* -------------------------
+   LIGHTBOX CAPTION + COUNTER
+-------------------------- */
+
+.lightbox-counter {
+  color: #bdbdbd;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 4px 0;
+  white-space: nowrap;
+}
+
+.lightbox-caption {
+  position: absolute;
+  bottom: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 40;
+
+  color: #fff;
+  text-align: center;
+  max-width: 80%;
+  background: rgba(0,0,0,0.45);
+  padding: 6px 12px;
+  border-radius: 6px;
+  word-wrap: break-word;
+  font-size: clamp(12px, 2.5vw, 15px);
+
+  opacity: 1;
+
+  visibility: visible;
+
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease;
+}
+
+.lightbox-caption.hidden {
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  pointer-events: none;
+
+}
+
+/* -------------------------
+   MOBILE LIGHTBOX LAYOUT
+-------------------------- */
+
+@media (max-width:600px) {
+
+  .lightbox-info {
+
+    flex-wrap: wrap;
+    row-gap: 2px;
+
+  }
+
+  .lightbox-status-group,
+  .lightbox-actions-group {
+
+    width: 100%;
+
+    justify-content: center;
+
+  }
+
+  .lightbox-caption {
+
+    bottom: 82px;
+
+  }
+
+}
+
+/* edge nudge */
+.lightbox-image.nudge-left {
+  transform: translate(-70%, -50%);
+}
+
+.lightbox-image.nudge-right {
+  transform: translate(-30%, -50%);
+}
+
+.carousel-dot:focus-visible,
+.lightbox-dot:focus-visible {
+
+  outline: 3px solid #f09600;
+  outline-offset: 4px;
+
+}
+
+/* -------------------------
+   BACK TO TOP BUTTON
+-------------------------- */
+
+.back-to-top {
+
+  position: fixed;
+
+  right: 20px;
+  bottom: 20px;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(180,0,0,0.85);
+  color: #ffffff;
+
+  font-size: 1.5rem;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  z-index: 999;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease,
+    background 0.3s ease;
+}
+
+.back-to-top.visible {
+
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+
+  background: rgba(120,0,0,0.95);
+}
+
+.back-to-top:focus-visible {
+
+  outline: 3px solid #f09600;
+  outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  * {
+
+    animation: none !important;
+    transition: none !important;
+
+    scroll-behavior: auto !important;
+
+  }
+
+}

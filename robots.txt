@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://essenceofinsrana.github.io/sitemap_map1.xml
