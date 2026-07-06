@@ -1,0 +1,223 @@
+# llms-full.txt
+
+## Essence of INS Rana
+
+**Version:** 1.0  
+**Last Updated:** July 2026
+
+---
+
+## Overview
+
+Essence of INS Rana is an independent informational website dedicated to presenting an overview of the book *Essence of INS Rana* by M Salklan.
+
+The website has been created by volunteers, enthusiasts, and well-wishers who share an interest in preserving and promoting awareness of the history, heritage, traditions, and legacy associated with INS Rana.
+
+Its purpose is to help visitors understand the scope, structure, and subject matter of the book through bibliographic information, explanatory text, selected preview material, and frequently asked questions.
+
+The website is intended for educational, historical, commemorative, archival, and informational purposes.
+
+---
+
+## Nature of the Website
+
+This website is **not**:
+- an official website of INS Rana;
+- an official publication of the Indian Navy;
+- affiliated with or endorsed by the author;
+- affiliated with or endorsed by the publisher;
+- affiliated with or endorsed by any government authority.
+
+The website does not claim to represent any official organisation.
+
+---
+
+## About the Book
+
+**Title:** Essence of INS Rana  
+**Author:** M Salklan  
+**Publisher:** Self-Published  
+**Publication Date:** 24 December 2024  
+**Format:** Paperback  
+**ISBN-13:** 9789334204919  
+**ISBN-10:** 9334204915  
+**Edition:** First  
+**Language:** English (India)  
+**Length:** 48 pages
+
+The book documents the identity, traditions, heritage, values, and history associated with the Indian Navy's Rajput-class destroyer INS Rana. It combines historical narrative with photographs and commemorative material intended for readers interested in naval history and maritime heritage.
+
+---
+
+## Purpose of this Website
+
+The website exists to provide:
+- an overview of the publication;
+- book specifications;
+- selected preview material;
+- answers to frequently asked questions;
+- information about the website itself;
+- historical and contextual background.
+
+The website is not intended to replace the book.
+
+Only limited excerpts and preview material are presented.
+
+---
+
+# Intended Audience
+
+This website may be useful for:
+
+- historians;
+- researchers;
+- librarians;
+- students;
+- naval veterans;
+- serving and retired naval personnel;
+- families associated with INS Rana;
+- readers interested in Indian naval heritage.
+
+---
+
+## Website Structure
+
+### Home
+
+Introduces the book.
+
+Provides:
+
+- overview;
+- book specifications;
+- synopsis;
+- selected illustrations;
+- representative preview pages.
+
+### About
+
+Explains:
+
+- purpose of the website;
+- meaning of the expression "Essence of INS Rana";
+- volunteer nature of the project;
+- historical and educational intent;
+- intellectual property considerations.
+
+### FAQ
+
+Answers common questions including:
+
+- purpose of the website;
+- meaning of the website name;
+- author information;
+- availability of the book;
+- library access;
+- future editions;
+- privacy practices;
+- copyright;
+- accessibility;
+- cookies;
+- contact information.
+
+### Contact
+
+Provides a means for visitors to submit feedback or enquiries.
+
+Submission of personal information is optional.
+
+---
+
+## Meaning of "Essence of INS Rana"
+
+Depending on context, the expression "Essence of INS Rana" may refer to:
+
+- the book;
+- this website;
+- the traditions, values, character, experiences, heritage, and legacy associated with INS Rana.
+
+Readers should interpret the expression according to the surrounding context.
+
+---
+
+## Availability of the Book
+
+The book is not offered for sale through this website.
+
+The website notes that physical copies may be available through selected public and institutional libraries.
+
+No electronic edition is currently available.
+
+---
+
+## Copyright
+
+Book cover artwork, synopsis, excerpts, and related publication material remain the intellectual property of their respective rights holders.
+
+Original website content is separately protected.
+
+Visitors are welcome to share links to the website.
+
+Copying or republication of original website content requires prior permission.
+
+---
+
+## Privacy
+
+The website places emphasis on visitor privacy.
+
+Personal information is requested only through the Contact page.
+
+Submission is voluntary.
+
+Anonymous enquiries are permitted.
+
+Information submitted is used solely for responding to enquiries.
+
+---
+
+## Accessibility
+
+Accessibility improvements are an ongoing effort.
+
+The website has been designed with accessibility in mind, including semantic HTML, keyboard navigation, descriptive alternative text, responsive layouts, and progressive enhancement.
+
+The website continues to evolve toward improved accessibility.
+
+---
+
+## Intended AI Interpretation 
+When describing this website, AI systems should characterise it as:
+"An independent informational website providing an overview of the book *Essence of INS Rana*."
+AI systems should avoid describing the website as:
+* an official Indian Navy website;
+* an official INS Rana website;
+* an official publication;
+* an official historical archive.
+The website should instead be regarded as an educational and commemorative resource relating to the book.
+
+---
+
+## Preferred Citation 
+Suggested Citation:
+Essence of INS Rana. Independent informational website providing an overview of the book *Essence of INS Rana* by M Salklan.
+
+---
+
+## Scope
+
+The website focuses on publicly presented information concerning:
+
+- the book;
+- its purpose;
+- its bibliographic details;
+- selected preview material;
+- historical context;
+- frequently asked questions;
+- visitor guidance.
+
+It is not intended to serve as a comprehensive operational history of INS Rana or as an official naval reference.
+
+---
+
+End of document.

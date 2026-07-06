@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Hyperlinking Policy - Essence of INS Rana</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Explore our hyperlinking policy on linking to our website, and external links.">
+<script src="loadcss.js"></script>
+<noscript>
+    <link rel="stylesheet" href="style.css">
+</noscript>
+
+<link rel="icon" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+
+<!-- Android and browser tab theme color -->
+  <meta name="theme-color" content="#a00000" />
+  <meta name="msapplication-navbutton-color" content="#a00000" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+</head>
+
+<body>
+
+<a href="#main-content" class="skip-link">
+  Skip to main content
+</a>
+
+<header>
+<img src="carousel-images/01-Front-Cover.webp" fetchpriority="high" alt="Book cover of Essence of INS Rana" class="logo" width="1238" height="1752"/>
+
+  <h1>Essence of INS Rana</h1>
+
+ <nav class="site-nav" aria-label="Primary">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main id="main-content">
+<h2 class="page-title">Hyperlinking Policy</h2>
+<div class="content">
+
+<p class="last-updated">
+Last Updated:
+<time datetime="2026-06-20">
+20 Jun 2026
+</time>
+</p>
+
+<hr class="separator">
+
+<section class="section">
+
+<ul class="legal-text">
+<li style="margin-bottom: 1em;">This website may contain hyperlinks to external websites and resources for informational and reference purposes. Such links are provided solely for the convenience of visitors.</li>
+<li style="margin-bottom: 1em;">The inclusion of any hyperlink does not imply endorsement, approval, or recommendation of the linked website, its content, products, services, or views.</li>
+<li style="margin-bottom: 1em;">The website owner has no control over the nature, content, availability, or accuracy of external websites and accepts no responsibility for any information, material, or services provided by them.</li>
+<li style="margin-bottom: 1em;">Visitors who access external websites through hyperlinks on this website do so at their own discretion and are subject to the terms, conditions, and privacy policies of those websites.</li>
+<li style="margin-bottom: 1em;">Links to this website from other websites are generally permitted, provided that such links do not misrepresent the nature or purpose of this website, imply endorsement where none exists, or present the content in a misleading or unlawful manner.</li>
+</ul>
+
+</section>
+
+</div>
+<hr class="separator" />
+      <div class="final-image">
+        <img src="07-INS-Rana-Silhouette.webp" alt="INS Rana warship silhouette" width="1280" height="264"/>
+      </div>
+</main>
+
+<button
+  id="backToTop"
+  class="back-to-top"
+  type="button"
+  aria-label="Back to top">
+
+  <svg
+    aria-hidden="true"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24">
+
+    <path
+      d="M6 15 L12 9 L18 15"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2.5"
+      stroke-linecap="round"
+      stroke-linejoin="round" />
+
+  </svg>
+
+</button>
+
+<footer
+  class="footer"
+  aria-label="Legal Links">
+
+<a href="privacy.html">Privacy Policy</a>
+|
+<a href="terms.html">Terms of Use</a>
+|
+<a href="hyperlinking.html" aria-current="page">Hyperlinking Policy</a>
+|
+<a href="disclaimer.html">Disclaimer</a>
+|
+<a href="accessibility.html">Accessibility</a>
+|
+<a href="sitemap.html">Sitemap</a>
+
+<h2 class="footer-heading">About the Name</h2>
+<p class="about-name-text"><strong><em>Essence of INS Rana</em></strong> may refer to the book, this website, or the spirit and legacy associated with INS Rana. Learn more about the name on our <strong><a href="about.html#about-name" style="text-decoration: underline;">About</a></strong> page.</p>
+
+© 2026 <strong><em>Essence of INS Rana</em></strong>. All rights reserved.
+</footer>
+
+<script>
+
+const backToTop =
+  document.getElementById('backToTop');
+
+if (backToTop) {
+
+  window.addEventListener('scroll', () => {
+
+    if (window.scrollY > 300) {
+
+      backToTop.classList.add('visible');
+
+    } else {
+
+      backToTop.classList.remove('visible');
+
+    }
+
+  });
+
+  backToTop.addEventListener('click', () => {
+
+    window.scrollTo({
+
+      top: 0,
+
+      behavior:
+        window.matchMedia(
+          '(prefers-reduced-motion: reduce)'
+        ).matches
+          ? 'auto'
+          : 'smooth'
+    });
+
+  });
+
+}
+
+</script>
+
+</body>
+</html>
