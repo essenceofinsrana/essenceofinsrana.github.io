@@ -51,7 +51,7 @@ root/
 │  [Information files]
 ├── llms.txt
 ├── llms-full.txt
-└── Readme.txt
+└── README.md
 ```
 ## UX FEATURES
 ### Webpages
