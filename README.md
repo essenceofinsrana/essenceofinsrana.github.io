@@ -1,5 +1,4 @@
-# essenceofinsrana.github.io
-Website of book Essence of INS Rana
+# WEBSITE of the book ***ESSENCE of INS RANA***
 # WEBSITE FEATURES
 >Best viewed on text editors at font size 12px and window width >1100px to avoid overflow of tables/flowcharts
 ## STRUCTURE
@@ -145,7 +144,7 @@ root/
    - Mobile: One-finger drag
    - Keyboard: arrow buttons
  - Slight inertial dragging while user releases pan
-## Technical Architecture - Carousel & Lightbox
+## TECHNICAL ARCHITECTURE - CAROUSEL & LIGHTBOX
 The interactive client-side systems of this webpage are built using custom, vanilla JavaScript. Both systems utilise deterministic state machines, mathematical coordinate mappings, and simulated physical models to manage state, transitions, and performance
 ### Carousel Architecture & Logic
 The carousel acts as a 3D-depth slider using flat transformations. It translates logical indices into visual layers while maintaining non-blocking asynchronous timers
@@ -286,28 +285,35 @@ Once zoomed (`isLightboxZoomed = true`), the system enables a drag-to-pan physic
                  v
     [Under Threshold < 0.02] ──> Stop friction loop & ease back to bounds
  ```
- - Real-Time Tracking & Elastic Boundary Rubber-Banding
-   - While dragging, the system dynamically calculates maximum panning boundaries based on the current window size and the scaled image dimension (2\times zoom):
+- Real-Time Tracking & Elastic Boundary Rubber-Banding
+  - While dragging, the system dynamically calculates maximum panning boundaries based on the current window size and the scaled image dimension (2\times zoom):
+  ```
+    \text{maxX} = \max\left(0, \frac{\text{Width}_{\text{image}} - \text{Width}_{\text{window}}}{2}\right)
     ```
-   \text{maxX} = \max\left(0, \frac{\text{Width}_{\text{image}} - \text{Width}_{\text{window}}}{2}\right)
-   ```
-   - If a user drags past these boundaries, an elastic rubber-banding calculation reduces movement sensitivity to 25%, indicating that the boundary limit has been reached:
-   ```
-   if (newPanX > maxX) {
-   newPanX = maxX + (newPanX - maxX) * 0.25;
-   } 
- - Momentum Deceleration Mechanics
-   - During drag gestures, the engine calculates real-time pointer speed based on coordinate changes over time:
-         ```
-         V_x = \frac{\Delta X}{\Delta t}, \quad V_y = \frac{\Delta Y}{\Delta t}
-         ```
-   - When the pointer is released (`pointerup`), the engine transitions control to a friction-decay loop managed by `requestAnimationFrame`:
+    - If a user drags past these boundaries, an elastic rubber-banding calculation reduces movement sensitivity to 25%, indicating that the boundary limit has been reached:
+    ```
+    if (newPanX > maxX) {
+    newPanX = maxX + (newPanX - maxX) * 0.25;
+    } 
+- Momentum Deceleration Mechanics
+  - During drag gestures, the engine calculates real-time pointer speed based on coordinate changes over time:
+   
+   `V_x = \frac{\Delta X}{\Delta t}, \quad V_y = \frac{\Delta Y}{\Delta t}`
+  - When the pointer is released (`pointerup`), the engine transitions control to a friction-decay loop managed by `requestAnimationFrame`:
      - Friction Multiplier: Each animation frame reduces velocity by 6% to simulate resistance:
-    velocityX *= 0.94;
-    velocityY *= 0.94;
+
+      `velocityX *= 0.94;`
+
+      `velocityY *= 0.94;`
+ 
      - Coordinate Progression: Panning values update on each tick by factoring in velocity scales:
-    panX += velocityX * 16;
-    panY += velocityY * 16;
+       
+     `panX += velocityX * 16;`
+
+     `panY += velocityY * 16;`
+   
      - Edge Friction Control: When moving within 10% of maximum limits, the script applies an extra braking force to prevent abrupt bounces:
-    `if (Math.abs(panX) > maxX * 0.9) velocityX *= 0.75;`
+
+     `if (Math.abs(panX) > maxX * 0.9) velocityX *= 0.75;`
+   
      - Loop Termination & Snap-Back: Once the frame velocity drops below a threshold of 0.02, the loop ends. The engine then runs a smooth easing transition to snap the panning coordinates back inside the strict layout bounds (`clampPan`), ensuring the image remains aligned within the viewport
