@@ -74,7 +74,7 @@ root/
  - Manual navigation pauses auto-scroll for 10 seconds
  - Auto-scroll resumes automatically after 10 seconds of last manual navigation
  - Dedicated Pause/Play button below the carousel
- - Pause buttons turns to play button if paused by clicking on pause button and vice versa
+ - Pause button converts to play button if paused by clicking on pause button and vice versa
  - Pause/Play button dims when carousel paused during hover over carousel area or during manual navigation
  - User-selected pause remains in effect until Play is pressed
  - Carousel image dots change colour to indicate centre image on carousel
@@ -86,6 +86,8 @@ root/
  - Upon display width <600px, counter and open lightbox buttons together shift below carousel dots and pause button
  - Preload next/previous images
  - Large touch-areas for controls
+ - Swipe navigation for touch displays
+ - Clicking on left or right iamges results in same action as clicking the left and right arrows
 ### Lightbox
  - Click any carousel image to open a full-screen lightbox
  - Darkened background overlay
