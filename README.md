@@ -1,4 +1,6 @@
 # WEBSITE of the book ***ESSENCE of INS RANA***
+## [![Live Website](https://img.shields.io/badge/VISIT-LIVE_WEBSITE-blue)](https://essenceofinsrana.github.io)
+## 🌐 [https://essenceofinsrana.github.io](https://essenceofinsrana.github.io)
 # WEBSITE FEATURES
 >Best viewed on text editors at font size 12px and window width >1100px to avoid overflow of tables/flowcharts
 ## STRUCTURE
