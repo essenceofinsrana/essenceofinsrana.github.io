@@ -76,7 +76,7 @@ root/
  - Manual navigation pauses auto-scroll for 10 seconds
  - Auto-scroll resumes automatically after 10 seconds of last manual navigation
  - Dedicated Pause/Play button below the carousel
- - Pause button converts to play button if paused by clicking on pause button and vice versa
+ - Pause button converts to play button when paused by clicking on pause button and vice versa
  - Pause/Play button dims when carousel paused during hover over carousel area or during manual navigation
  - User-selected pause remains in effect until Play is pressed
  - Carousel image dots change colour to indicate centre image on carousel
