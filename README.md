@@ -89,7 +89,7 @@ root/
  - Preload next/previous images
  - Large touch-areas for controls
  - Swipe navigation for touch displays
- - Clicking on left or right iamges results in same action as clicking the left and right arrows
+ - Clicking/tapping on left or right images results in same action as clicking/tapping the left or right navigation arrows
 ### Lightbox
  - Click any carousel image to open a full-screen lightbox
  - Darkened background overlay
