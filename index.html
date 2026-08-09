@@ -2507,6 +2507,104 @@ window.addEventListener(
     </div>
   </main>
 
+<nav
+  id="floatingNav"
+  class="floating-nav"
+  aria-label="Quick navigation"
+  aria-hidden="true">
+
+  <a
+  href="index.html"
+  class="floating-nav-button active"
+  aria-label="Home">
+
+  <svg aria-hidden="true" fill="#ffffff" viewBox="0 0 256 256">
+
+    <path d="M219.31,108.68l-80-80a16,16,0,0,0-22.62,0l-80,80A15.87,15.87,0,0,0,32,120v96a8,8,0,0,0,8,8H216a8,8,0,0,0,8-8V120A15.87,15.87,0,0,0,219.31,108.68ZM208,208H48V120l80-80,80,80Z"></path>
+
+  </svg>
+
+</a>
+
+<a
+  href="about.html"
+  class="floating-nav-button"
+  aria-current="page"
+  aria-label="About">
+
+  <svg
+    aria-hidden="true"
+    fill="#ffffff"
+    viewBox="0 0 256 256">
+
+    <path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm16-40a8,8,0,0,1-8,8,16,16,0,0,1-16-16V128a8,8,0,0,1,0-16,16,16,0,0,1,16,16v40A8,8,0,0,1,144,176ZM112,84a12,12,0,1,1,12,12A12,12,0,0,1,112,84Z"></path>
+
+  </svg>
+
+</a>
+
+<a
+  href="faq.html"
+  class="floating-nav-button"
+  aria-label="FAQ">
+
+  <svg
+    aria-hidden="true"
+    fill="#ffffff"
+    viewBox="0 0 256 256">
+
+    <path d="M140,180a12,12,0,1,1-12-12A12,12,0,0,1,140,180ZM128,72c-22.06,0-40,16.15-40,36v4a8,8,0,0,0,16,0v-4c0-11,10.77-20,24-20s24,9,24,20-10.77,20-24,20a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0v-.72c18.24-3.35,32-17.9,32-35.28C168,88.15,150.06,72,128,72Zm104,56A104,104,0,1,1,128,24,104.11,104.11,0,0,1,232,128Zm-16,0a88,88,0,1,0-88,88A88.1,88.1,0,0,0,216,128Z"></path>
+
+  </svg>
+
+</a>
+
+<a
+  href="contact.html"
+  class="floating-nav-button"
+  aria-label="Contact">
+
+  <svg
+    aria-hidden="true"
+    fill="#ffffff"
+    viewBox="0 0 256 256">
+
+    <path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48Zm-96,85.15L52.57,64H203.43ZM98.71,128,40,181.81V74.19Zm11.84,10.85,12,11.05a8,8,0,0,0,10.82,0l12-11.05,58,53.15H52.57ZM157.29,128,216,74.18V181.82Z"></path>
+
+  </svg>
+
+</a>
+  
+</nav>
+
+<button
+  id="menuToggle"
+  class="menu-toggle"
+  type="button"
+  aria-label="Navigation menu"
+  aria-expanded="false">
+
+  <svg
+    class="hamburger-icon"
+    viewBox="0 0 24 24"
+    aria-hidden="true">
+
+    <line class="line top"
+          x1="5" y1="7"
+          x2="19" y2="7"/>
+
+    <line class="line middle"
+          x1="5" y1="12"
+          x2="19" y2="12"/>
+
+    <line class="line bottom"
+          x1="5" y1="17"
+          x2="19" y2="17"/>
+
+</svg>
+
+</button>
+
 <button
   id="backToTop"
   class="back-to-top"
@@ -2558,17 +2656,73 @@ window.addEventListener(
 const backToTop =
   document.getElementById('backToTop');
 
-if (backToTop) {
+const menuToggle =
+  document.getElementById('menuToggle');
+
+const floatingNav =
+  document.getElementById('floatingNav');
+
+const floatingNavLinks =
+  floatingNav
+    ? floatingNav.querySelectorAll('.floating-nav-button')
+    : [];
+
+document.addEventListener('keydown', (event) => {
+
+  if (
+    event.key === 'Tab' ||
+    event.key === 'ArrowUp' ||
+    event.key === 'ArrowDown' ||
+    event.key === 'ArrowLeft' ||
+    event.key === 'ArrowRight'
+  ) {
+
+    document.body.classList.add('keyboard-focus');
+
+  }
+
+});
+
+document.addEventListener('pointerdown', () => {
+
+  document.body.classList.remove('keyboard-focus');
+
+});
+
+if (backToTop && menuToggle && floatingNav) {
 
   window.addEventListener('scroll', () => {
 
     if (window.scrollY > 300) {
 
       backToTop.classList.add('visible');
+      menuToggle.classList.add('visible');
 
     } else {
 
       backToTop.classList.remove('visible');
+
+      menuToggle.classList.remove('visible');
+
+      floatingNav.classList.remove('visible');
+
+      floatingNav.classList.remove('closing');
+
+      menuToggle.classList.remove('open');
+
+      menuToggle.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+      floatingNav.setAttribute(
+        'aria-hidden',
+        'true'
+      );
+
+      floatingNavLinks.forEach(link => {
+        link.setAttribute('tabindex', '-1');
+      });
 
     }
 
@@ -2586,12 +2740,182 @@ if (backToTop) {
         ).matches
           ? 'auto'
           : 'smooth'
+
     });
 
   });
 
+  floatingNavLinks.forEach(link => {
+    link.setAttribute('tabindex', '-1');
+  });
+
+  menuToggle.addEventListener('click', () => {
+
+    const isOpen =
+      menuToggle.classList.contains('open');
+
+    if (isOpen) {
+
+      menuToggle.classList.remove('open');
+
+      menuToggle.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+      floatingNav.setAttribute(
+        'aria-hidden',
+        'true'
+      );
+
+      floatingNavLinks.forEach(link => {
+        link.setAttribute('tabindex', '-1');
+      });
+
+      floatingNav.classList.add('closing');
+
+      if (
+        document.body.classList.contains(
+          'keyboard-focus'
+        )
+      ) {
+
+        menuToggle.focus();
+
+      }
+
+      const lastButton =
+        floatingNav.querySelector(
+          '.floating-nav-button:nth-child(1)'
+        );
+
+      if (lastButton) {
+
+        lastButton.addEventListener(
+          'transitionend',
+          function handleClosing(event) {
+
+            if (
+  event.propertyName !== 'transform' ||
+  event.target !== lastButton
+) {
+  return;
 }
 
+            floatingNav.classList.remove('visible');
+            floatingNav.classList.remove('closing');
+
+            lastButton.removeEventListener(
+              'transitionend',
+              handleClosing
+            );
+
+          },
+          { once: true }
+        );
+
+      }
+
+    } else {
+
+      floatingNav.classList.remove('closing');
+
+      floatingNav.classList.add('visible');
+
+      menuToggle.classList.add('open');
+
+      menuToggle.setAttribute(
+        'aria-expanded',
+        'true'
+      );
+
+      floatingNav.setAttribute(
+        'aria-hidden',
+        'false'
+      );
+
+      floatingNavLinks.forEach(link => {
+        link.setAttribute('tabindex', '0');
+      });
+
+      requestAnimationFrame(() => {
+
+  if (
+    document.body.classList.contains(
+      'keyboard-focus'
+    )
+  ) {
+
+    if (floatingNavLinks[0]) {
+      floatingNavLinks[0].focus();
+    }
+
+  }
+
+});
+
+    }
+
+  });
+floatingNavLinks.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+      menuToggle.classList.remove('open');
+
+      floatingNav.classList.remove('visible');
+      floatingNav.classList.remove('closing');
+
+      menuToggle.setAttribute(
+        'aria-expanded',
+        'false'
+      );
+
+      floatingNav.setAttribute(
+        'aria-hidden',
+        'true'
+      );
+
+      floatingNavLinks.forEach(navLink => {
+        navLink.setAttribute('tabindex', '-1');
+      });
+
+    });
+
+  });
+}
+
+window.addEventListener('pageshow', () => {
+
+  if (!menuToggle || !floatingNav) {
+    return;
+  }
+
+  menuToggle.classList.remove('open');
+
+  menuToggle.classList.remove('visible');
+
+  floatingNav.classList.remove('visible');
+
+  floatingNav.classList.remove('closing');
+
+  menuToggle.setAttribute(
+    'aria-expanded',
+    'false'
+  );
+
+  floatingNav.setAttribute(
+    'aria-hidden',
+    'true'
+  );
+
+  floatingNavLinks.forEach(link => {
+    link.setAttribute('tabindex', '-1');
+  });
+  document.body.classList.remove('keyboard-focus');
+});
+
 </script>
+
 </body>
 </html>

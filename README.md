@@ -55,6 +55,7 @@ root/
  - High score in WCAG 2.2 AA compliance 
  - Skip to Main button
  - Back to Top SVG button
+ - Animated hamburger button with nav menu
  - Keyboard accessible
  - Hover effects on clickable elements
  - Main Navigation and content reorient when screen width <600px
