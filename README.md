@@ -34,7 +34,9 @@ root/
 │   └── 06-Back-Cover.webp
 │
 │  [Utility images]
-├── favicon.png
+├── favicon.svg
+├── favicon2.png
+├── favicon3.png
 ├── 07-INS-Rana-Silhouette.webp
 │
 │  [Technical files]
