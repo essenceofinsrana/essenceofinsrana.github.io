@@ -10,18 +10,18 @@
     - [Webpages](#webpages)
     - [Carousel](#carousel)
     - [Lightbox](#lightbox)
-  - [TECHNICAL ARCHITECTURE - CAROUSEL & LIGHTBOX](#technical-architecture-carousel-lightbox)
-    - [Carousel Architecture & Logic](#carousel-architecture-logic)
+  - [TECHNICAL ARCHITECTURE - CAROUSEL & LIGHTBOX](#technical-architecture---carousel--lightbox)
+    - [Carousel Architecture & Logic](#carousel-architecture--logic)
       - [State Variables](#state-variables)
-      - [Circular Indexing & Normalised Positioning Logic](#circular-indexing-normalised-positioning-logic)
-      - [Timer Coordination & User Override Logic](#timer-coordination-user-override-logic)
+      - [Circular Indexing & Normalised Positioning Logic](#circular-indexing--normalised-positioning-logic)
+      - [Timer Coordination & User Override Logic](#timer-coordination--user-override-logic)
       - [Roving Tabindex for Control Dots](#roving-tabindex-for-control-dots)
-    - [Lightbox & Zoom-Pan Physics Engine](#lightbox-zoom-pan-physics-engine)
+    - [Lightbox & Zoom-Pan Physics Engine](#lightbox--zoom-pan-physics-engine)
       - [Viewport Lock Management](#viewport-lock-management)
       - [Double-Buffered Slide Transitions](#double-buffered-slide-transitions)
       - [Intelligent Image Preloading Heuristics](#intelligent-image-preloading-heuristics)
       - [Dynamic Zoom Transformation Origin](#dynamic-zoom-transformation-origin)
-      - [Advanced Pointer Drag, Boundary Physics, and Momentum Engine](#advanced-pointer-drag-boundary-physics-and-momentum-engine)
+      - [Advanced Pointer Drag, Boundary Physics, & Momentum Engine](#advanced-pointer-drag-boundary-physics--momentum-engine)
       
 # WEBSITE FEATURES
 >Best viewed on text editors at font size 12px and window width >1100px to avoid overflow of tables/flowcharts
@@ -285,7 +285,7 @@ When double-clicking or double-tapping to zoom, scaling from the centre can caus
 \text{OriginY} = \left( \frac{Y_{\text{click}} - \text{Rect}_{\text{top}}}{\text{Rect}_{\text{height}}} \right) \times 100
 ```
 This math sets the CSS transformOrigin to matching percentage values, ensuring the image scales directly from the user's cursor location
-#### Advanced Pointer Drag, Boundary Physics, and Momentum Engine
+#### Advanced Pointer Drag, Boundary Physics, & Momentum Engine
 Once zoomed (`isLightboxZoomed = true`), the system enables a drag-to-pan physics engine managed through unified Pointer Events
 ```
        [Raw Drag Coordinates]
