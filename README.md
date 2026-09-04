@@ -1,6 +1,28 @@
 # WEBSITE of the book ***ESSENCE of INS RANA***
 ## [![Live Website](https://img.shields.io/badge/VISIT-LIVE_WEBSITE-blue)](https://essenceofinsrana.github.io)
 ## 🌐 [https://essenceofinsrana.github.io](https://essenceofinsrana.github.io)
+
+## TABLE OF CONTENTS
+
+- [WEBSITE FEATURES](#website-features)
+  - [STRUCTURE](#structure)
+  - [UX FEATURES](#ux-features)
+    - [Webpages](#webpages)
+    - [Carousel](#carousel)
+    - [Lightbox](#lightbox)
+  - [TECHNICAL ARCHITECTURE - CAROUSEL & LIGHTBOX](#technical-architecture-carousel-lightbox)
+    - [Carousel Architecture & Logic](#carousel-architecture-logic)
+      - [State Variables](#state-variables)
+      - [Circular Indexing & Normalised Positioning Logic](#circular-indexing-normalised-positioning-logic)
+      - [Timer Coordination & User Override Logic](#timer-coordination-user-override-logic)
+      - [Roving Tabindex for Control Dots](#roving-tabindex-for-control-dots)
+    - [Lightbox & Zoom-Pan Physics Engine](#lightbox-zoom-pan-physics-engine)
+      - [Viewport Lock Management](#viewport-lock-management)
+      - [Double-Buffered Slide Transitions](#double-buffered-slide-transitions)
+      - [Intelligent Image Preloading Heuristics](#intelligent-image-preloading-heuristics)
+      - [Dynamic Zoom Transformation Origin](#dynamic-zoom-transformation-origin)
+      - [Advanced Pointer Drag, Boundary Physics, and Momentum Engine](#advanced-pointer-drag-boundary-physics-and-momentum-engine)
+      
 # WEBSITE FEATURES
 >Best viewed on text editors at font size 12px and window width >1100px to avoid overflow of tables/flowcharts
 ## STRUCTURE
