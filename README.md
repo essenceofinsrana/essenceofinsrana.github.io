@@ -86,7 +86,7 @@ root/
  - Silhouette image resizes based on screen width
  - Use of .webp format images
  - Detailed FAQ page with expandable questions revealing the hidden answers
- - Contact form with captcha and honeypot security
+ - Contact form with CAPTCHA and honeypot security
  - High contrast levels
  - Custom browser tab colour for android phones
  - Favicon and titles for browser tabs
