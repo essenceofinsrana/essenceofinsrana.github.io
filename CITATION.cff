@@ -1,13 +1,54 @@
-cff-version: 1.1.0
-message: "If you want to reference or cite this book project in historical or academic work, please use the metadata below."
+cff-version: 1.2.0
+title: Essence of INS Rana
+message: >-
+  If you want to reference or cite this book project in
+  historical or academic work, please use the metadata
+  below.
+type: software
 authors:
-- family-names: "Salklan"
-  given-names: "Mahipendra"
-  orcid: "https://orcid.org/0009-0009-0063-8171"
-title: "Essence of INS Rana"
-type: book
-version: v1.0.0
-doi: 10.5281/zenodo.2290240
-date-released: 2024-12-24
+  - family-names: Salklan
+    given-names: Mahipendra
+    orcid: 'https://orcid.org/0009-0009-0063-8171'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.22902407
+url: 'https://essenceofinsrana.github.io'
+abstract: >-
+  Essence of INS Rana captures the glorious history,
+  indomitable spirit, and operational legacy of one of the
+  Indian Navy’s mightiest Rajput-class guided-missile
+  destroyers. Blending vivid historical documentation with
+  naval tradition and the proud heritage of Maharana Pratap,
+  this book chronicles the ship's resolute, resilient, and
+  relentless character, immortalising its role in shaping
+  India’s maritime strength. It aims to establish a
+  connection between the ship and the readers by reflecting
+  upon its identity, signature, tenets, and glorious past.
+
+
+  The book explores the unique ethos, valour, camaraderie
+  and esprit de corps that define the ship’s legacy. It
+  treats the ship's name itself as the subject, tracing the
+  lineage of 'Rana' through successive warships and
+  successive periods of naval service, from a First World
+  War-era Royal Navy destroyer through later Royal Navy
+  ships and two Indian Navy ships, up to the present INS
+  Rana (D52). The book thoughtfully integrates the story of
+  Maharana Pratap, enhancing its cultural and emotional
+  depth.
+keywords:
+  - INS Rana
+  - Naval History
+  - Warship History
+  - Maritime History
+  - Indian Navy
+  - Destroyer
+  - Rajput Class
+  - HMS Raider
+  - Radstock Class
+  - Rotherham Class
+  - Kashin Class
 license: CC-BY-4.0
-url: "https://essenceofinsrana.github.io"
+version: v1.0.0
+date-released: '2024-12-24'
+doi: 10.5281/zenodo.2290240
