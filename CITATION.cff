@@ -1,0 +1,18 @@
+yaml
+cff-version: 1.2.0
+message: "If you want to reference or cite this book project in historical or academic work, please use the metadata below."
+authors:
+  - family-names: "SALKLAN"
+    given-names: "M."
+    orcid: "https://orcid.org/0009-0009-0063-8171"
+title: "Essence of INS Rana"
+type: book
+url: "https://essenceofinsrana.github.io"
+keywords:
+  - "INS Rana"
+  - "Indian Navy"
+  - "Naval History"
+  - "Warship History"
+  - "Rajput-class Destroyer"
+  - "Maritime Heritage"
+license: CC-BY-4.0
