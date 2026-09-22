@@ -1,0 +1,12 @@
+cff-version: 1.1.0
+message: "If you want to reference or cite this book project in historical or academic work, please use the metadata below."
+authors:
+- family-names: Salklan
+  given-names: Mahipendra
+orcid: https://orcid.org/0009-0009-0063-8171
+title: Essence of INS Rana
+type: book
+url: https://essenceofinsrana.github.io
+version: v1.0.0
+date-released: 2024-12-24
+license: CC-BY-4.0
