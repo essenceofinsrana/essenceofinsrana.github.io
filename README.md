@@ -46,6 +46,7 @@ The book explores the unique ethos, valour, camaraderie and esprit de corps that
 To ensure long-term digital preservation and open scholarly discoverability, the book is multi-indexed across global open ecosystems:
 
 * **Primary Academic Archive & DOI:** Hosted permanently on **Zenodo**.
+  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22902408.svg)](https://doi.org/10.5281/zenodo.22902408)
 * **Discovery References:** Extended via **Figshare** and the **Harvard Dataverse** network.
 
 ---
@@ -57,5 +58,3 @@ The documentation, metadata, and web layouts in this repository are licensed und
 
 ## Technical Documentation
 If you are looking for the technical architecture or design framework of the book's website, please see [README_Technical.md](https://github.com/essenceofinsrana/essenceofinsrana.github.io/blob/main/README_Technical.md).
-
-https://doi.org/10.5281/zenodo.22902408
