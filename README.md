@@ -57,3 +57,5 @@ The documentation, metadata, and web layouts in this repository are licensed und
 
 ## Technical Documentation
 If you are looking for the technical architecture or design framework of the book's website, please see [README_Technical.md](https://github.com/essenceofinsrana/essenceofinsrana.github.io/blob/main/README_Technical.md).
+
+https://doi.org/10.5281/zenodo.22902408
