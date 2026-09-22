@@ -4,7 +4,7 @@ message: >-
   If you want to reference or cite this book project in
   historical or academic work, please use the metadata
   below.
-type: 'book'
+type: book
 authors:
   - family-names: Salklan
     given-names: Mahipendra
