@@ -13,7 +13,7 @@ authors:
     orcid: 'https://orcid.org/0009-0009-0063-8171'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.22902407
+    value: 10.5281/zenodo.22902408
 url: 'https://essenceofinsrana.github.io'
 abstract: >-
   Essence of INS Rana captures the glorious history,
@@ -52,4 +52,4 @@ keywords:
 license: CC-BY-4.0
 version: v1.0.0
 date-released: '2024-12-24'
-doi: 10.5281/zenodo.2290240
+doi: 10.5281/zenodo.22902408
