@@ -348,7 +348,3 @@ Once zoomed (`isLightboxZoomed = true`), the system enables a drag-to-pan physic
      - Loop Termination & Snap-Back: Once the frame velocity drops below a threshold of 0.02, the loop ends. The engine then runs a smooth easing transition to snap the panning coordinates back inside the strict layout bounds (`clampPan`), ensuring the image remains aligned within the viewport
 
 ---
----
-
-## Technical Documentation
-If you are looking for the technical architecture or design framework of the book's website, please see [README_Technical.md](https://github.com/essenceofinsrana/essenceofinsrana.github.io/blob/main/README_Technical.md).
