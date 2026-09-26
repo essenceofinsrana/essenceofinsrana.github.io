@@ -7,6 +7,16 @@ The book explores the unique ethos, valour, camaraderie and esprit de corps that
 ## Book Details
 * **Title:** Essence of INS Rana
 * **Subject:** Indian Naval History/ Warship Heritage
+* **Author:** M Salklan
+* **Publisher:** Self-Published
+* **Date Published:** 24 Dec 2024
+* **Format:** Paperback
+* **ISBN 13:** 9789334204919 (978-93-342-0491-9)
+* **ISBN 10:** 9334204915 (93-342-0491-5)
+* **Edition:** First (2024); Reprint 2026 (with minor improvements)
+* **Language:** English (India)
+* **Number of Pages:** 48
+* **Book Size:** ISO A5 / 6" × 9"
 * **Website:** [https://essenceofinsrana.github.io](https://essenceofinsrana.github.io)
 
 ### Table of Contents
@@ -47,7 +57,6 @@ To ensure long-term digital preservation and open scholarly discoverability, the
 
 * **Primary Academic Archive & DOI:** Hosted permanently on **Zenodo**.
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22902408.svg)](https://doi.org/10.5281/zenodo.22902408)
-* **Discovery References:** Extended via **Figshare** and the **Harvard Dataverse** network.
 
 ---
 
