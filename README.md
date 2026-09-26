@@ -52,10 +52,8 @@ The book explores the unique ethos, valour, camaraderie and esprit de corps that
 - **Picture Gallery.**
 - **Image Credits.**
 
-## Permanent Digital Archiving
-To ensure long-term digital preservation and open scholarly discoverability, the book is multi-indexed across global open ecosystems:
-
-* **Primary Academic Archive & DOI:** Hosted permanently on **Zenodo**.
+## Digital Archiving
+To ensure long-term digital preservation and open scholarly discoverability, the book is hosted on **Zenodo**.
   [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22902408.svg)](https://doi.org/10.5281/zenodo.22902408)
 
 ---
